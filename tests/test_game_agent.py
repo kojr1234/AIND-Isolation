@@ -22,10 +22,11 @@ class IsolationTest(unittest.TestCase):
 
     def test_example(self):
         # TODO: All methods must start with "test_"
-        count = 0
-        total = 1
+        count_victory = 0
+        count_forfeit = 0
+        total = 100
         for i in range(total):
-            player1 = game_agent.AlphaBetaPlayer(score_fn=game_agent.custom_score)
+            player1 = game_agent.AlphaBetaPlayer()
             player2 = sample_players.GreedyPlayer()
             game = isolation.Board(player1, player2)
             game.apply_move((2, 3))
@@ -53,8 +54,13 @@ class IsolationTest(unittest.TestCase):
             print("Move history:\n{!s}".format(history))
 
             if winner == player1:
-                count += 1
-        print("Ganhei {} vezes em um total de {}, representando {} % de vitoria".format(count, total, (count/total) * 100))
+                count_victory += 1
+
+            if outcome == "forfeit":
+                count_forfeit += 1
+
+        print("Ganhei {} vezes em um total de {}, representando {} % de vitoria. "
+              "Houveram {} forfeits".format(count_victory, total, (count_victory/total) * 100, count_forfeit))
 
 if __name__ == '__main__':
     unittest.main()

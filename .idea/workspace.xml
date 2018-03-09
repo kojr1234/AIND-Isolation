@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="298e6d9d-2992-4cda-86e7-c4217b837885" name="Default" comment="error">
+    <list default="true" id="298e6d9d-2992-4cda-86e7-c4217b837885" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game_agent.py" afterPath="$PROJECT_DIR$/game_agent.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_game_agent.py" afterPath="$PROJECT_DIR$/tests/test_game_agent.py" />
@@ -18,8 +18,8 @@
       <file leaf-file-name="game_agent.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game_agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="343" column="18" lean-forward="true" selection-start-line="343" selection-start-column="18" selection-end-line="343" selection-end-column="18" />
+            <state relative-caret-position="442">
+              <caret line="428" column="26" lean-forward="true" selection-start-line="428" selection-start-column="26" selection-end-line="428" selection-end-column="26" />
               <folding>
                 <element signature="e#199#212#0" expanded="true" />
               </folding>
@@ -30,8 +30,8 @@
       <file leaf-file-name="test_game_agent.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_game_agent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="45" column="66" lean-forward="false" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+            <state relative-caret-position="113">
+              <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
               <folding>
                 <element signature="e#207#222#0" expanded="true" />
               </folding>
@@ -52,8 +52,8 @@
       <file leaf-file-name="sample_players.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sample_players.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="145" column="23" lean-forward="true" selection-start-line="145" selection-start-column="23" selection-end-line="145" selection-end-column="23" />
+            <state relative-caret-position="374">
+              <caret line="61" column="4" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="67" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -62,8 +62,8 @@
       <file leaf-file-name="tournament.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tournament.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="74" column="29" lean-forward="true" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
+            <state relative-caret-position="385">
+              <caret line="151" column="39" lean-forward="false" selection-start-line="151" selection-start-column="39" selection-end-line="151" selection-end-column="39" />
               <folding>
                 <element signature="e#689#705#0" expanded="true" />
               </folding>
@@ -74,8 +74,8 @@
       <file leaf-file-name="isolation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/isolation/isolation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="39" column="60" lean-forward="false" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+            <state relative-caret-position="866">
+              <caret line="336" column="64" lean-forward="true" selection-start-line="336" selection-start-column="64" selection-end-line="336" selection-end-column="73" />
               <folding>
                 <element signature="e#381#394#0" expanded="true" />
               </folding>
@@ -92,9 +92,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/tournament.py" />
-        <option value="$PROJECT_DIR$/game_agent.py" />
-        <option value="$PROJECT_DIR$/tests/test_game_agent.py" />
         <option value="$PROJECT_DIR$/isolation/isolation.py" />
+        <option value="$PROJECT_DIR$/tests/test_game_agent.py" />
+        <option value="$PROJECT_DIR$/game_agent.py" />
       </list>
     </option>
   </component>
@@ -180,9 +180,31 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_game_agent.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
+    <configuration name="tournament" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AIND-Isolation-master" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tournament.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in test_game_agent.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python.tournament" />
+    </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in test_game_agent.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python.tournament" />
       </list>
     </recent_temporary>
   </component>
@@ -197,37 +219,45 @@
       <option name="presentableId" value="Default" />
       <updated>1520378628685</updated>
     </task>
+    <task id="LOCAL-00001" summary="MinMax implemented">
+      <created>1520622350843</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1520622350844</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 15h 27m 32s.xml">
+    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 17h 51m 13s.xml">
       <configuration name="Nosetests in test_game_agent.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 15h 27m 47s.xml">
+    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 17h 51m 29s.xml">
       <configuration name="Nosetests in test_game_agent.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 15h 28m 34s.xml">
+    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 17h 51m 58s.xml">
       <configuration name="Nosetests in test_game_agent.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 15h 51m 00s.xml">
+    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 17h 52m 21s.xml">
       <configuration name="Nosetests in test_game_agent.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 15h 59m 27s.xml">
+    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 17h 53m 13s.xml">
       <configuration name="Nosetests in test_game_agent.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 16h 00m 55s.xml">
+    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 17h 53m 49s.xml">
       <configuration name="Nosetests in test_game_agent.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 16h 01m 30s.xml">
+    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 17h 59m 03s.xml">
       <configuration name="Nosetests in test_game_agent.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 16h 03m 07s.xml">
+    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 18h 00m 00s.xml">
       <configuration name="Nosetests in test_game_agent.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 16h 03m 43s.xml">
+    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 18h 00m 13s.xml">
       <configuration name="Nosetests in test_game_agent.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 16h 05m 06s.xml">
+    <history-entry file="Nosetests_in_test_game_agent_py - 2018.03.09 at 18h 01m 24s.xml">
       <configuration name="Nosetests in test_game_agent.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -295,6 +325,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="MinMax implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="MinMax implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -387,20 +421,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tournament.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="74" column="29" lean-forward="true" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
-          <folding>
-            <element signature="e#689#705#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sample_players.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="145" column="23" lean-forward="true" selection-start-line="145" selection-start-column="23" selection-end-line="145" selection-end-column="23" />
+        <state relative-caret-position="374">
+          <caret line="61" column="4" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="67" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -413,10 +437,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tournament.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="151" column="39" lean-forward="false" selection-start-line="151" selection-start-column="39" selection-end-line="151" selection-end-column="39" />
+          <folding>
+            <element signature="e#689#705#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/isolation/isolation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="39" column="60" lean-forward="false" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+        <state relative-caret-position="866">
+          <caret line="336" column="64" lean-forward="true" selection-start-line="336" selection-start-column="64" selection-end-line="336" selection-end-column="73" />
           <folding>
             <element signature="e#381#394#0" expanded="true" />
           </folding>
@@ -425,8 +459,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_game_agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="45" column="66" lean-forward="false" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+        <state relative-caret-position="113">
+          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
           <folding>
             <element signature="e#207#222#0" expanded="true" />
           </folding>
@@ -435,8 +469,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game_agent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="343" column="18" lean-forward="true" selection-start-line="343" selection-start-column="18" selection-end-line="343" selection-end-column="18" />
+        <state relative-caret-position="442">
+          <caret line="428" column="26" lean-forward="true" selection-start-line="428" selection-start-column="26" selection-end-line="428" selection-end-column="26" />
           <folding>
             <element signature="e#199#212#0" expanded="true" />
           </folding>
