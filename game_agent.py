@@ -405,7 +405,7 @@ class AlphaBetaPlayer(IsolationPlayer):
             raise SearchTimeout()
 
         if self.terminal_test(game):
-            return -1
+            return game.utility(self)
 
         if depth <= 0:
             return self.score(game, self)
@@ -423,7 +423,7 @@ class AlphaBetaPlayer(IsolationPlayer):
             raise SearchTimeout()
 
         if self.terminal_test(game):
-            return 1
+            return game.utility(self)
 
         if depth <= 0:
             return self.score(game, self)
