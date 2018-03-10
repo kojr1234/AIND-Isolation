@@ -35,6 +35,7 @@ def custom_score(game, player):
         The heuristic value of the current game state to the specified player.
     """
     # TODO: finish this function!
+
     if game.is_loser(player):
         return float("-inf")
 
@@ -246,6 +247,8 @@ class MinimaxPlayer(IsolationPlayer):
         return best_move
 
     def terminal_test(self, game):
+        if self.time_left() < self.TIMER_THRESHOLD:
+            raise SearchTimeout()
         return not bool(game.get_legal_moves())
 
     def max_value(self, game, depth):
@@ -253,7 +256,7 @@ class MinimaxPlayer(IsolationPlayer):
             raise SearchTimeout()
 
         if self.terminal_test(game):
-            return -1
+            return game.utility(self)
 
         if depth <= 0:
             return self.score(game, self)
@@ -268,7 +271,7 @@ class MinimaxPlayer(IsolationPlayer):
             raise SearchTimeout()
 
         if self.terminal_test(game):
-            return 1
+            return game.utility(self)
 
         if depth <= 0:
             return self.score(game, self)
@@ -386,13 +389,15 @@ class AlphaBetaPlayer(IsolationPlayer):
         best_score = float("-inf")
         best_move = None
         for move in game.get_legal_moves():
-            v = self.max_value(game.forecast_move(move), depth - 1, alpha, beta)
+            v = self.min_value(game.forecast_move(move), depth - 1, alpha, beta)
             if v > best_score:
                 best_score = v
                 best_move = move
         return best_move
 
     def terminal_test(self, game):
+        if self.time_left() < self.TIMER_THRESHOLD:
+            raise SearchTimeout()
         return not bool(game.get_legal_moves())
 
     def max_value(self, game, depth, alpha, beta):

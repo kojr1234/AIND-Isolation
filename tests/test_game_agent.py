@@ -24,10 +24,11 @@ class IsolationTest(unittest.TestCase):
         # TODO: All methods must start with "test_"
         count_victory = 0
         count_forfeit = 0
-        total = 100
+        total = 10
         for i in range(total):
             player1 = game_agent.AlphaBetaPlayer()
-            player2 = sample_players.GreedyPlayer()
+            player2 = game_agent.MinimaxPlayer()
+            #player2 = sample_players.GreedyPlayer()
             game = isolation.Board(player1, player2)
             game.apply_move((2, 3))
             game.apply_move((0, 5))
