@@ -24,7 +24,7 @@ class IsolationTest(unittest.TestCase):
         # TODO: All methods must start with "test_"
         count_victory = 0
         count_forfeit = 0
-        total = 100
+        total = 5
         for i in range(total):
             player1 = game_agent.AlphaBetaPlayer()
             player2 = game_agent.MinimaxPlayer()
@@ -35,17 +35,6 @@ class IsolationTest(unittest.TestCase):
             print(game.to_string())
             # players take turns moving on the board, so player1 should be next to move
             assert (player1 == game.active_player)
-
-            # get a list of the legal moves available to the active player
-            print(game.get_legal_moves())
-
-            # get a successor of the current state by making a copy of the board and
-            # applying a move. Notice that this does NOT change the calling object
-            # (unlike .apply_move()).
-            new_game = game.forecast_move((1, 1))
-            assert (new_game.to_string() != game.to_string())
-            print("\nOld state:\n{}".format(game.to_string()))
-            print("\nNew state:\n{}".format(new_game.to_string()))
 
             # play the remainder of the game automatically -- outcome can be "illegal
             # move", "timeout", or "forfeit"
