@@ -24,7 +24,7 @@ class IsolationTest(unittest.TestCase):
         # TODO: All methods must start with "test_"
         count_victory = 0
         count_forfeit = 0
-        total = 10
+        total = 100
         for i in range(total):
             player1 = game_agent.AlphaBetaPlayer()
             player2 = game_agent.MinimaxPlayer()
@@ -57,11 +57,11 @@ class IsolationTest(unittest.TestCase):
             if winner == player1:
                 count_victory += 1
 
-            if outcome == "forfeit":
+            if outcome == "forfeit" and winner != player1:
                 count_forfeit += 1
 
-        print("Ganhei {} vezes em um total de {}, representando {} % de vitoria. "
-              "Houveram {} forfeits".format(count_victory, total, (count_victory/total) * 100, count_forfeit))
+        print("Won {} times in a total of {} games, representing {} % of victory rate. "
+              "{} forfeits occurred".format(count_victory, total, (count_victory/total) * 100, count_forfeit))
 
 if __name__ == '__main__':
     unittest.main()
