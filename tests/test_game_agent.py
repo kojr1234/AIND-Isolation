@@ -9,7 +9,7 @@ import isolation
 import game_agent
 import sample_players
 from importlib import reload
-
+import competition_agent
 
 class IsolationTest(unittest.TestCase):
     """Unit tests for isolation agents"""
@@ -24,10 +24,10 @@ class IsolationTest(unittest.TestCase):
         # TODO: All methods must start with "test_"
         count_victory = 0
         count_forfeit = 0
-        total = 5
+        total = 100
         for i in range(total):
-            player1 = game_agent.AlphaBetaPlayer()
-            player2 = game_agent.MinimaxPlayer()
+            player2 = game_agent.AlphaBetaPlayer(score_fn=game_agent.custom_score_2)
+            player1 = game_agent.AlphaBetaPlayer(score_fn=game_agent.custom_score)
             #player2 = sample_players.GreedyPlayer()
             game = isolation.Board(player1, player2)
             game.apply_move((2, 3))
@@ -50,7 +50,7 @@ class IsolationTest(unittest.TestCase):
                 count_forfeit += 1
 
         print("Won {} times in a total of {} games, representing {} % of victory rate. "
-              "{} forfeits occurred".format(count_victory, total, (count_victory/total) * 100, count_forfeit))
+              "{} forfeits occurred".format(count_victory, total, float((count_victory/total) * 100), count_forfeit))
 
 if __name__ == '__main__':
     unittest.main()
